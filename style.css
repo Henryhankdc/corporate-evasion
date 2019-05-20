@@ -67,25 +67,36 @@ button.active {
 .ImageContainer {
   margin: 20px;
   padding: 10px;
+  position: relative;
 }
 img {
   max-width: 100%;
 }
-img#image-1 {
-  display: none;
-}
-img#image-1.active {
-  display: block;
-}
-img#image-2 {
-  display: none;
-}
-img#image-2.active {
-  display: block;
-}
+img#image-1,
+img#image-2,
 img#image-3 {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* visibility: hidden; */
+  /* display: none; */
+  transition: all 0.5s;
 }
+img#image-1.active, img#image-2.active, img#image-3.active {
+  opacity: 1;;
+  /* display: block; */
+  /* visibility: visible; */
+}
+/* img#image-2 {
+  display: none;
+} */
+/* img#image-2.active {
+  display: block;
+}
+/* img#image-3 {
+  display: none;
+} */
 img#image-3.active {
   display: block;
-}
+} */
