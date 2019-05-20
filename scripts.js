@@ -7,6 +7,7 @@ let imageOne = document.getElementById('image-1');
 let imageTwo = document.getElementById('image-2');
 let imageThree = document.getElementById('image-3');
 
+//There's a better and shorter way to do this but...
 item.forEach(elem => {
   elem.addEventListener('click', function() {
     const clicked = this.id;
